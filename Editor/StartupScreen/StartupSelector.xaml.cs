@@ -41,7 +41,7 @@ namespace Editor.StartupScreen
                 if (loadProjBtn.IsChecked == true)
                 {
                     loadProjBtn.IsChecked = false;
-                    screenContent.Margin = new Thickness(800,0,0,0);
+                    screenContent.Margin = new Thickness(-800,0,0,0);
                 }
                 createProjBtn.IsChecked= true;
             }
