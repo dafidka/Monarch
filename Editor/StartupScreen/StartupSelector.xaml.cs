@@ -12,14 +12,14 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace Editor.GameProject
+namespace Editor.StartupScreen
 {
     /// <summary>
     /// Interaction logic for StartupScreen.xaml
     /// </summary>
-    public partial class StartupScreen : Window
+    public partial class StartupSelector : Window
     {
-        public StartupScreen()
+        public StartupSelector()
         {
             InitializeComponent();
         }
@@ -41,7 +41,7 @@ namespace Editor.GameProject
                 if (loadProjBtn.IsChecked == true)
                 {
                     loadProjBtn.IsChecked = false;
-                    screenContent.Margin = new Thickness(-800,0,0,0);
+                    screenContent.Margin = new Thickness(800,0,0,0);
                 }
                 createProjBtn.IsChecked= true;
             }

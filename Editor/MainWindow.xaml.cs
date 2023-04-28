@@ -1,4 +1,4 @@
-﻿using Editor.GameProject;
+﻿using Editor.StartupScreen;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -35,11 +35,10 @@ namespace Editor
 
         private void OpenStartupScreen()
         {
-            var startupScreen = new StartupScreen();
-            startupScreen.ShowDialog(); //only the startup screen is interactable
-            if (startupScreen.ShowDialog() == false)    //if dialog doesn't exist   
+            var startupScreen = new StartupSelector();
+            if (startupScreen.ShowDialog() == false)    //create dialog & if dialog is closed, close main window
             {
-                Application.Current.Shutdown();         //close main window too
+                Application.Current.Shutdown();
             }
             else
             {
